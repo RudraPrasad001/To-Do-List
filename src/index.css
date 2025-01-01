@@ -1,0 +1,124 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+.task{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#adder {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#adder:hover {
+  background-color: #4cae4c;
+  transition: ease-in-out 0.1s;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+
+.tasks button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.remove {
+  background-color: #d9534f;
+  color: white;
+}
+
+.remove:hover {
+  background-color: #c9302c;
+}
+
+.move-up {
+  background-color: #0275d8;
+  color: white;
+}
+
+.move-up:hover {
+  background-color: #025aa5;
+}
+
+.move-down {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.move-down:hover {
+  background-color: #ec971f;
+}
+
+@media (max-width: 480px) {
+  .task{
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .tasks {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .tasks button {
+      margin: 5px 0 0 0;
+      width: 100%;
+  }
+
+  #adder {
+      font-size: 0.9rem;
+  }
+
+  #taskInput {
+      font-size: 0.9rem;
+  }
+}
